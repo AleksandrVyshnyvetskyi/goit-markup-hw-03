@@ -19,14 +19,34 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  outline: 1px solid tomato;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  padding: 0;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* Шапка */
@@ -62,7 +82,6 @@ ul {
   color: var(--theme-accent);
 }
 
-/* тут будет позиционирование, по этому пока что оставил классы пустыми */
 .studio-page {
 }
 
@@ -72,12 +91,11 @@ ul {
 .contacts-page {
 }
 
-/* коммент вверху */
-
 .header-contacts {
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.14;
+  padding-bottom: 32px;
 }
 
 .email-header {
@@ -97,7 +115,10 @@ ul {
 /* Герой */
 
 .hero {
-  background-color: var(--bgd-color);
+  background-color: rgba(10, 10, 10, 0.8);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .tagline {
@@ -106,7 +127,6 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -118,9 +138,12 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
   cursor: pointer;
   color: var(--main-text-color);
   background-color: var(--bgd-button-color);
+  border-radius: 4px;
+  border: 0;
 }
 
 .button-portfolio:hover {
@@ -137,16 +160,18 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
   text-align: center;
-}
-
-.contacts {
-  color: var(--text-color);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* Секции */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: aquamarine;
+}
 
 .visually-hidden {
   position: absolute;
@@ -168,20 +193,26 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* Наши особенности */
+
+
+}
 
 .feature {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-text {
   color: var(--text-color);
   line-height: 1.71;
 }
+
 
 /* Наша команда */
 
@@ -195,6 +226,7 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -231,12 +263,14 @@ ul {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  margin-bottom: 20px;
 }
 
 .geolocation {
   color: var(--main-bgd-color);
   font-style: normal;
   line-height: 1.71;
+  margin-bottom: 9px;
 }
 
 .contacts-footer {
