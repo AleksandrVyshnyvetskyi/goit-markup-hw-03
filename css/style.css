@@ -1,0 +1,246 @@
+:root {
+  /* основной цвет текста */
+  --main-text-color: #212121;
+  /* вторичный цвет текста */
+  --text-color: #757575;
+  /* цвет-акцент */
+  --theme-accent: #2196f3;
+  /* основной цвет фона */
+  --main-bgd-color: #fff;
+  /* вторичный цвет фона */
+  --bgd-color: #2f303a;
+  /* цвет фона кнопок */
+  --bgd-button-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--main-bgd-color);
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Шапка */
+
+.site-nav {
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav.current {
+  color: var(--theme-accent);
+}
+
+.site-nav:hover,
+.site-nav:focus,
+.contacts:hover,
+.contacts:focus,
+.button:hover {
+  color: var(--theme-accent);
+}
+
+.logo {
+  font-family: Raleway, cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000;
+}
+
+.logo-web {
+  color: var(--theme-accent);
+}
+
+/* тут будет позиционирование, по этому пока что оставил классы пустыми */
+.studio-page {
+}
+
+.portfolio-page {
+}
+
+.contacts-page {
+}
+
+/* коммент вверху */
+
+.header-contacts {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.email-header {
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.tel-header {
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+/* Герой */
+
+.hero {
+  background-color: var(--bgd-color);
+}
+
+.tagline {
+  color: var(--main-bgd-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Кнопка */
+
+.button-portfolio {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  color: var(--main-text-color);
+  background-color: var(--bgd-button-color);
+}
+
+.button-portfolio:hover {
+  background-color: var(--theme-accent);
+  color: var(--main-bgd-color);
+}
+
+.order-button {
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+  background-color: var(--theme-accent);
+  color: var(--main-bgd-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts {
+  color: var(--text-color);
+}
+
+/* Секции */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наши особенности */
+
+.feature {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  color: var(--text-color);
+  line-height: 1.71;
+}
+
+/* Наша команда */
+
+.team {
+  background-color: var(--bgd-button-color);
+}
+
+.team-name {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* Портфолио */
+.name-project {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Подвал */
+
+.page-footer {
+  background-color: var(--bgd-color);
+}
+
+.logo-footer {
+  color: var(--main-bgd-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.geolocation {
+  color: var(--main-bgd-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+}
