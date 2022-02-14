@@ -23,30 +23,32 @@
   <body>
     <!-- Шапка -->
     <header class="conteiner">
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a href="./index.html" class="logo"
             ><span class="logo-web">Web</span>Studio</a
           >
-          <ul>
-            <li>
+          <ul class="site-nav link">
+            <li class="item">
               <a class="site-nav studio-page" href="./index.html">Студия</a>
             </li>
-            <li>
+            <li class="item">
               <a class="site-nav current portfolio-page" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li><a class="site-nav contacts-page" href="">Контакты</a></li>
+            <li class="item">
+              <a class="site-nav contacts-page" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li>
+        <ul class="header-contacts link">
+          <li class="item">
             <a class="contacts email-header" href="info@devstudio.com">
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="item">
             <a class="contacts tel-header" href="tel:+380961111111">
               +38 096 111 11 11
             </a>
@@ -56,27 +58,29 @@
     </header>
     <main>
       <!--Навигация на странице-->
-      <section>
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
-          <ul>
-            <li><button type="button" class="button-portfolio">Все</button></li>
-            <li>
+          <ul class="works-catt">
+            <li class="port-catt">
+              <button type="button" class="button-portfolio">Все</button>
+            </li>
+            <li class="port-catt">
               <button type="button" class="button-portfolio">Веб-сайты</button>
             </li>
-            <li>
+            <li class="port-catt">
               <button type="button" class="button-portfolio">Приложения</button>
             </li>
-            <li>
+            <li class="port-catt">
               <button type="button" class="button-portfolio">Дизайн</button>
             </li>
-            <li>
+            <li class="port-catt">
               <button type="button" class="button-portfolio">Маркетинг</button>
             </li>
           </ul>
           <h2 class="visually-hidden">Примеры наших работ</h2>
-          <ul>
-            <li>
+          <ul class="all-projects">
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img.jpg"
@@ -89,7 +93,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(1).jpg"
@@ -102,7 +106,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(2).jpg"
@@ -115,7 +119,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(3).jpg"
@@ -128,7 +132,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(4).jpg"
@@ -141,7 +145,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(5).jpg"
@@ -154,7 +158,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(6).jpg"
@@ -167,7 +171,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(7).jpg"
@@ -180,7 +184,7 @@
                 <p></p>
               </a>
             </li>
-            <li>
+            <li class="project-box">
               <a href="">
                 <img
                   src="./images/img-portfolio/img(8).jpg"
@@ -204,15 +208,11 @@
         <a href="./index.html" class="logo-footer"
           ><span class="logo-web">Web</span>Studio</a
         >
-        <address class="geolocation">
-          <p>г. Киев, пр-т Леси Украинки, 26</p>
-        </address>
-        <address>
+        <address class="address-box">
+          <p class="geolocation">г. Киев, пр-т Леси Украинки, 26</p>
           <a target="_blank" href="info@devstudio.com" class="contacts-footer"
             >info@devstudio.com</a
           >
-        </address>
-        <address>
           <a target="_blank" href="+380961111111" class="contacts-footer"
             >+38 096 111 11 11</a
           >
