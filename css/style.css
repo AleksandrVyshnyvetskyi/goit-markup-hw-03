@@ -252,7 +252,6 @@ ul {
 
 .feature {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .feature-tittle {
@@ -326,13 +325,31 @@ ul {
   margin-right: 0px;
 }
 
+.project-container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .all-project {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-box {
-  display: flex;
-  margin: 0;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-box:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project-box:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .name-project {
