@@ -290,6 +290,13 @@ img {
 .team-box:last-child {
   margin-right: 0px;
 }
+
+.team-man {
+  padding: 30px 60px;
+  border: solid 1px #eeeeee;
+  border-top: 0;
+}
+
 .team-name {
   margin-bottom: 10px;
 
